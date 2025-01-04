@@ -1,0 +1,84 @@
+/* Container para a seção Social */
+.social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  /* Título da seção */
+  .social-container h3 {
+    font-family: 'Source Code Pro', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  /* Estilo para os ícones */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #25d366; /* Cor do WhatsApp */
+    color: white;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 15px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1);
+    background-color: #075e54; /* Cor de hover para WhatsApp */
+  }
+  
+  .social-icon i {
+    margin: 0;
+  }
+  
+  /* Estilos específicos para cada ícone */
+  .social-icon:nth-child(1) {
+    background-color: #25d366; /* WhatsApp */
+  }
+  
+  .social-icon:nth-child(2) {
+    background-color: #e4405f; /* Instagram */
+  }
+  
+  .social-icon:nth-child(3) {
+    background-color: #1877f2; /* Facebook */
+  }
+  
+  .social-icon:nth-child(4) {
+    background-color: #0077b5; /* Email */
+  }
+  
+  /* Responsividade */
+@media (max-width: 768px) {
+    .social-container {
+      width: 85vw;
+      max-width: 85vw;
+      margin-top: 97px;
+    }
+    .social-icons {
+      display: grid; /* Usando grid para organizar em duas colunas */
+      grid-template-columns: repeat(2, 1fr); /* Duas colunas de tamanho igual */
+      gap: 10px; /* Espaço entre os ícones */
+    }
+  }
+  
